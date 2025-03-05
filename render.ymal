@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: my-node-bot
+    runtime: node
+    region: oregon  # يمكنك تغييره حسب الحاجة
+    plan: free  # أو اختر خطة مدفوعة إن كنت بحاجة لموارد أكبر
+    buildCommand: npm install
+    startCommand: npm start  # أو حسب ملف التشغيل الرئيسي لديك
+    envVars:
+      - key: NODE_VERSION
+        value: 18  # أو أي إصدار تحتاجه
+      - key: BOT_TOKEN
+        sync: false  # لا تضع القيم الحساسة هنا، بل أضفها يدويًا من لوحة التحكم
