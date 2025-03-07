@@ -22,7 +22,7 @@ const { Boom } = "boom".import();
 const { Connecting } = await `${fol[8]}systemConnext.js`.r()
 const Event = (await 'events'.import()).default
 Event.defaultMaxListeners = 25 
-import expresso from "express";
+/*import expresso from "express";
 const appu = expresso();
 
 
@@ -34,6 +34,7 @@ const PORTO = process.env.PORTO || 3000;
 appu.listen(PORTO, () => {
   console.log(`Web server is running on port ${PORTO}`);
 });
+*/
 let {
     makeWASocket,
     useMultiFileAuthState,
